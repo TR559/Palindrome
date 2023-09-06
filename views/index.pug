@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method="post" action="/")
+    label(for="userText") Enter your text here:
+    br
+    input(type="text" id="userText" name="userText")
+    br
+    br
+    button(type="submit") Submit
+  if message
+    p=message
+
